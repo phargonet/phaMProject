@@ -25,7 +25,7 @@ class phaMController extends CController {
      *
      * @var string
      */
-    const JQ_MOBILE_VERSION = '1.0a3';
+    const JQ_MOBILE_VERSION = '1.0a4';
 
     /**
      * The default layout for the controller view.
@@ -46,7 +46,7 @@ class phaMController extends CController {
         $app->clientScript->registerCoreScript('jquery');
 
         $mobileAsserts = $app->getComponent('assetManager')->publish(Yii::getPathOfAlias('ext.phaMProject.vendors.jqmobile'));
-        if (defined('YII_DEBUG')) {
+        if (defined('YII_DEBUG') and YII_DEBUG) {
             $postfix = '';
         }
         else {
