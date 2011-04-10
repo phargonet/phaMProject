@@ -18,7 +18,7 @@
  * phaMApplication defines the default controller, specific layout, and initializes app.
  * Core application components provides CWebApplication.
  *
- * @author Vadim
+ * @author Vadim Kruchkov <long@phargo.net>
  * @package phaMProject
  */
 class phaMApplication extends CWebApplication {
