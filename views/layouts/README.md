@@ -1,1 +1,1 @@
-This directory contains [main](main.php) layout and defaul simple [page][./page.php] layout.
+This directory contains [main](layouts/main.php) layout and defaul simple [page][layouts/page.php] layout.
