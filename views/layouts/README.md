@@ -1,0 +1,1 @@
+This directory contains [main](main.php) layout and defaul simple [page][./page.php] layout.
