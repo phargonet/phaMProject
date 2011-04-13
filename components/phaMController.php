@@ -53,6 +53,6 @@ class phaMController extends CController {
             $postfix = '.min';
         }
         $app->clientScript->registerScriptFile($mobileAsserts . '/jquery.mobile-' .self::JQ_MOBILE_VERSION . $postfix . '.js');
-        $app->clientScript->registerCssFile($mobileAsserts . '/jquery.mobile-' .self::JQ_MOBILE_VERSION . $postfix . '.css');
+        $app->clientScript->registerCssFile($mobileAsserts . '/themes/default/jquery.mobile-' .self::JQ_MOBILE_VERSION . $postfix . '.css'); // @todo define team in config
     }
 }
