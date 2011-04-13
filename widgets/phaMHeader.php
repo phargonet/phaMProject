@@ -21,7 +21,7 @@
  * @package phaMProject
  * @subpackage Widgets
  */
-class phaMHeader extends CWidget {
+class phaMHeader extends phaMElements {
 
     /**
      * Initializes the header widget.
@@ -32,6 +32,7 @@ class phaMHeader extends CWidget {
     public function init() {
         echo CHtml::openTag('div', array(
             'data-role' => MDataRole::HEADER,
+            'data-theme' => $this->theme,
         ));
     }
 

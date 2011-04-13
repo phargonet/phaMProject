@@ -21,7 +21,7 @@
  * @package phaMProject
  * @subpackage Widgets
  */
-class phaMFooter extends CWidget {
+class phaMFooter extends phaMElements {
 
     /**
      * Includes the ability to display the buttons in the block.
@@ -41,7 +41,8 @@ class phaMFooter extends CWidget {
         echo CHtml::openTag('div', array(
             'data-role' => MDataRole::FOOTER,
             //'data-position' => MPosition::FIXED,
-            'class'  => $this->hasButtonBar?'ui-bar':''
+            'class'  => $this->hasButtonBar?'ui-bar':'',
+            'data-theme' => $this->theme,
         ));
     }
 

@@ -23,7 +23,7 @@
  *
  * @todo will add methods addButton(s)
  */
-class phaMControlGroup extends CWidget {
+class phaMControlGroup extends phaMElements {
 
     /**
      * Initializes the group widget.
@@ -35,6 +35,7 @@ class phaMControlGroup extends CWidget {
         echo CHtml::openTag('div', array(
             'data-role' => MDataRole::CONTROL_GROUP,
             'data-type' => MDataType::HORIZONTAL,
+            'data-theme' => $this->theme,
         ));
     }
 

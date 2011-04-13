@@ -21,7 +21,7 @@
  * @package phaMProject
  * @subpackage Widgets
  */
-class phaMPage extends CWidget {
+class phaMPage extends phaMElements {
 
     /**
      * Defines view (or no) back linking button (to back page)
@@ -40,7 +40,8 @@ class phaMPage extends CWidget {
         echo CHtml::openTag('div', array(
             'data-role' => MDataRole::PAGE,
             'nobackbtn' => $this->noBackBtn,
-            'id' => 'main_page' // TODO external define ID
+            'id' => 'main_page', // TODO external define ID
+            'data-theme' => $this->theme,
         ));
     }
 

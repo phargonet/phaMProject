@@ -20,7 +20,7 @@
  * @package phaMProject
  * @subpackage Widgets
  */
-class phaMDialog extends CWidget {
+class phaMDialog extends phaMElements {
 
     /**
      * URL which will be open by click
@@ -59,6 +59,7 @@ class phaMDialog extends CWidget {
                 'data-icon' => isset($this->icon['img'])?$this->icon['img']:'',
                 'data-iconpos' => isset($this->icon['position'])?$this->icon['position']:MIcons::POSITION_LEFT,
                 'data-close-btn-text' => '', // @todo now it's not works in JQ
+                'data-theme' => $this->theme,
             ),
             $this->text,
             true

@@ -21,7 +21,7 @@
  * @package phaMProject
  * @subpackage Widgets
  */
-class phaMContent extends CWidget {
+class phaMContent extends phaMElements {
 
     /**
      * Initializes the content widget.
@@ -30,7 +30,10 @@ class phaMContent extends CWidget {
      * properties have been initialized.
      */
     public function init() {
-        echo CHtml::openTag('div', array('data-role' => MDataRole::CONTENT));
+        echo CHtml::openTag('div', array(
+            'data-role' => MDataRole::CONTENT,
+            'data-theme' => $this->theme,
+        ));
     }
 
     /**

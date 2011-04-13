@@ -20,7 +20,7 @@
  * @package phaMProject
  * @subpackage Widgets
  */
-class phaMButton extends CWidget {
+class phaMButton extends phaMElements {
 
     /**
      * URL which will be open by click
@@ -65,6 +65,7 @@ class phaMButton extends CWidget {
                 'data-icon' => isset($this->icon['img'])?$this->icon['img']:'',
                 'data-iconpos' => isset($this->icon['position'])?$this->icon['position']:MIcons::POSITION_LEFT,
                 'class' => 'ui-btn-' . $this->position,
+                'data-theme' => $this->theme,
             ),
             $this->text,
             true

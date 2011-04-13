@@ -25,7 +25,7 @@
  * @package phaMProject
  * @subpackage Widgets
  */
-class phaMNaviBar extends CWidget {
+class phaMNaviBar extends phaMElements {
 
     /**
      * Initializes the navigation bar widget.
@@ -36,6 +36,7 @@ class phaMNaviBar extends CWidget {
     public function init() {
         echo CHtml::openTag('div', array(
             'data-role' => MDataRole::NAV_BAR,
+            'data-theme' => $this->theme,
         ));
         echo CHtml::openTag('ul');
     }
@@ -68,6 +69,7 @@ class phaMNaviBar extends CWidget {
                 'href' => isset($conf['href'])?$conf['href']:'#',
                 'class' => (isset($conf['isActive']) and $conf['isActive']===true)?'ui-btn-active':'',
                 'data-icon' => isset($conf['icon'])?$conf['icon']:'',
+                'data-theme' => $this->theme,
             ), isset($conf['text'])?$conf['text']:false);
         echo CHtml::closeTag('li');
     }
