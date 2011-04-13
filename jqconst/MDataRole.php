@@ -78,4 +78,12 @@ class MDataRole {
      * @var string
      */
     const CONTROL_GROUP = 'controlgroup';
+
+    /**
+     * Defines constant for button, opening dialog page
+     * @see http://jquerymobile.com/demos/1.0a4.1/docs/pages/docs-dialogs.html
+     *
+     * @var string
+     */
+    const DIALOG = 'dialog';
 }
