@@ -22,12 +22,34 @@
  */
 class phaMButton extends CWidget {
 
+    /**
+     * URL which will be open by click
+     *
+     * @var string
+     */
     public $href = '#';
 
+    /**
+     * Text on the button
+     *
+     * @var string
+     */
     public $text = '';
 
+    /**
+     * Array defines icon for button/
+     * Keys in array:
+     *  - img - image for view on button. Value is one for constant from MIcons. Default is empty, i.e. - button without image.
+     *  - position - image position on button. Value is one for constant from MIcons (POSITION_*). Defaul is MIcons::POSITION_LEFT
+     * @var array
+     */
     public $icon = array();
 
+    /**
+     * Button position in parent block
+     *
+     * @var string
+     */
     public $position = 'left';
 
     /**
