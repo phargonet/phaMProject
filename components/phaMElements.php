@@ -29,6 +29,17 @@ abstract class phaMElements extends CWidget {
      */
     private $team = MTheme::BY_DEFAULT;
 
+    public $id;
+
+    /**
+     * Constructor.
+     * @param CBaseController $owner owner/creator of this widget. It could be either a widget or a controller.
+     */
+    public function __construct($owner=null){
+        parent::__construct($owner);
+        $this->id = $this->getId(true); // autogenerate ID
+    }
+
     /**
      * Set current theme for element
      *

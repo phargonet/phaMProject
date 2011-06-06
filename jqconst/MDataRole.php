@@ -86,4 +86,11 @@ class MDataRole {
      * @var string
      */
     const DIALOG = 'dialog';
+
+    /**
+     * Define constant for group fieldcontain
+     *
+     * @var string
+     */
+    const FIELD_CONTAIN = 'fieldcontain';
 }

@@ -53,6 +53,13 @@ class phaMButton extends phaMElements {
     public $position = 'left';
 
     /**
+     * Inline position
+     *
+     * @var boolean
+     */
+    public $inline = true;
+
+    /**
      * Executes the button widget.
      * This method is called by {@link CBaseController::endWidget}.
      */
@@ -63,9 +70,10 @@ class phaMButton extends phaMElements {
                 'href' => $this->href,
                 'data-role' => MDataRole::BUTTON,
                 'data-icon' => isset($this->icon['img'])?$this->icon['img']:'',
-                'data-iconpos' => isset($this->icon['position'])?$this->icon['position']:MIcons::POSITION_LEFT,
+                'data-iconpos' => !empty($this->icon)?(isset($this->icon['position'])?$this->icon['position']:MIcons::POSITION_LEFT):'',
                 'class' => 'ui-btn-' . $this->position,
                 'data-theme' => $this->theme,
+                'data-inline' => $this->inline,
             ),
             $this->text,
             true

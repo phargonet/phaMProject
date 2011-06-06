@@ -23,7 +23,15 @@ class MDataType {
 
     /**
      * Defines constant for horizontal accommodation of block
+     *
      * @var string
      */
     const HORIZONTAL = 'horizontal';
+
+    /**
+     * Defines constant for vertical accommodation of block
+     *
+     * @var string
+     */
+    const VERTICAL = 'vertical';
 }
