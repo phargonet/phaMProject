@@ -25,7 +25,7 @@ class phaMController extends CController {
      *
      * @var string
      */
-    const JQ_MOBILE_VERSION = '1.0a4';
+    const JQ_MOBILE_VERSION = '1.0a4.1';
 
     /**
      * The default layout for the controller view.
@@ -38,6 +38,8 @@ class phaMController extends CController {
      * Initializes the controller.
      * This method is called by the application before the controller starts to execute.
      * You may override this method to perform the needed initialization for the controller.
+     *
+     * If you start Yii in production mode (YII_DEBUG == false) will be included minify version of scripts.
      */
     public function init() {
         parent::init();
